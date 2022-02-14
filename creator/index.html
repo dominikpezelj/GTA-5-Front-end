@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/step1.css" />
+    <link rel="stylesheet" type="text/css" href="css/step2.css" />
+    <link rel="stylesheet" type="text/css" href="css/step3.css" />
+    <link rel="stylesheet" type="text/css" href="css/step4.css" />
+    <link rel="stylesheet" type="text/css" href="css/step5.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <style>
+        .input-hidden {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        input[type="radio"]:checked+label>span {
+            border: 1px solid #fff;
+            box-shadow: 0 0 3px 3px #33bbff;
+        }
+        /* Stuff after this is only to make things more pretty */
+        
+        input[type="radio"]+label>span {
+            border-bottom: 1px solid #000;
+            width: 150px;
+            height: 150px;
+            transition: 500ms all;
+        }
+        
+        input[type="radio"]:checked+label>span {
+            transform: rotateZ(-10deg) rotateX(10deg);
+        }
+    </style>
+</head>
+
+<body data-step="1">
+    <!-- Steps -->
+    <div class="steps">
+        <h1 class="selection selection-gender">character creator</h1>
+        <h1 class="selection selection-parents">character creator</h1>
+        <h1 class="selection selection-features">character creator</h1>
+        <h1 class="selection selection-appearance">character creator</h1>
+        <h1 class="selection selection-hair-color">character creator</h1>
+    </div>
+    <center>
+        <div class="steps2">
+            <div class="row" style="width: 50%; margin: 0 auto; min-width: 150px">
+                <div id="nav-one" style="
+              width: 20px;
+              height: 20px;
+              background: rgba(0, 0, 0, 0.5);
+              border-radius: 50px;
+            "></div>
+                <div id="nav-two" style="
+              margin-left: 10px;
+              width: 20px;
+              height: 20px;
+              background: rgba(0, 0, 0, 0.5);
+              border-radius: 50px;
+            "></div>
+                <div id="nav-three" style="
+              margin-left: 10px;
+              width: 20px;
+              height: 20px;
+              background: rgba(0, 0, 0, 0.5);
+              border-radius: 50px;
+            "></div>
+                <div id="nav-four" style="
+              margin-left: 10px;
+              width: 20px;
+              height: 20px;
+              background: rgba(0, 0, 0, 0.5);
+              border-radius: 50px;
+            "></div>
+                <div id="nav-five" style="
+              margin-left: 10px;
+              width: 20px;
+              height: 20px;
+              background: rgba(0, 0, 0, 0.5);
+              border-radius: 50px;
+            "></div>
+            </div>
+        </div>
+    </center>
+    <center>
+        <div class="steps3">
+            <div id="stepName"></div>
+        </div>
+    </center>
+    <div id="accountName">
+        <center id="vertical">
+            <span id="accNameSpan">Account:</span><span id="accUsername">&nbsp;&nbsp;skzeljo</span>
+        </center>
+    </div>
+
+    <div id="closeCreator">
+        <center id="vertical" class="closeCreatorText">close creator</center>
+    </div>
+    <!-- Container Step 1 - Gender -->
+    <form class="step-1">
+        <center>
+            <div class="row justify-content-center">
+                <div id="immigration">
+                    <div id="content-header">
+                        <div id="content-logo1">
+                            <img src="./images/ls-administration.png" style="width: 100px; margin-top: -41px" />
+                        </div>
+                        <div id="content-header-text">
+                            Los Santos Administration <br />Department of Immigration
+                        </div>
+                        <div id="content-logo2">
+                            <img src="./images/ls-logo.png" style="width: 100px; margin-top: -110px" />
+                        </div>
+                    </div>
+                    <hr />
+                    <div id="content-title">Entry Permit</div>
+
+                    <div class="row d-flex justify-content-center" style="margin-top: 35px">
+                        <input id="first-name" placeholder="First Name" style="
+                  background: transparent;
+                  border-bottom: 2px solid #000 !important;
+                  border: 0;
+                  font-family: fontold;
+                " />
+                        <input id="last-name" placeholder="Last Name" style="
+                  margin-left: 10px;
+                  background: transparent;
+                  border-bottom: 2px solid #000 !important;
+                  border: 0;
+                  font-family: fontold;
+                " />
+                    </div>
+
+                    <div class="row d-flex justify-content-center" style="margin-top: 35px">
+                        <input id="nationality" placeholder="Nationality" style="
+                  background: transparent;
+                  border-bottom: 2px solid #000 !important;
+                  border: 0;
+                  font-family: fontold;
+                " />
+                        <input id="birth" placeholder="Birth day MM-DD-YYYY" style="
+                  margin-left: 10px;
+                  background: transparent;
+                  border-bottom: 2px solid #000 !important;
+                  border: 0;
+                  font-family: fontold;
+                " />
+                    </div>
+
+                    <div class="row d-flex justify-content-center" style="margin-top: 35px">
+                        <textarea id="reason" rows="4" cols="40" placeholder="Reason of Immigration (Min 150 characters!)" style="
+                  background: transparent;
+                  border-bottom: 2px solid #000 !important;
+                  border: 0;
+                  font-family: fontold;
+                "></textarea>
+                    </div>
+                    <div class="row d-flex justify-content-center" style="margin-top: 35px">
+                        <div class="form-check form-check-inline">
+                            <input type="radio" value="0" name="gender" id="femalePick" class="input-hidden" />
+                            <label for="femalePick">
+                        <span style="
+                      font-family: 'fontold';
+                      padding: 5px 20px 5px 20px !important;
+                    ">
+                           FEMALE
+                        </span>
+                     </label>
+
+                            <input type="radio" value="1" name="gender" id="malePick" class="input-hidden" />
+                            <label for="malePick">
+                        <span style="
+                      font-family: 'fontold';
+                      padding: 5px 20px 5px 20px !important;
+                    ">
+                           MALE
+                        </span>
+                     </label>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center" style="margin-top: 35px">
+                        <span style="font-family: fontold; width: 80%; font-size: 14px">By signing this document you will be
+                     able to live, work and
+                     travel across the State of San Andreas. From this point you are
+                     expected to obey the law and federal institutions of San
+                     Andreas.
+                  </span>
+                    </div>
+                    <div class="row d-flex justify-content-around" style="margin-top: 35px">
+                        <span id="signature">SIGNATURE <br /><span id="showFirstLastName">Frank Collins</span>
+                        </span>
+                        <img src="./images/ls-stamp.png" style="width: 130px" />
+                        <span id="state">AUTHORIZED BY <br /><span>State of San Andreas</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </form>
+
+    <!-- Container Step 2 - Parents -->
+    <form class="step-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="female-parent-pick">
+                        <div class="next-prev-input-selection mother-selection">
+                            <span class="show-marker">Mother</span>
+                            <div class="actions">
+                                <span class="prev-arrow" onclick="motherPick('prev');">
+                           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.006 512.006"
+                              style="enable-background: new 0 0 512.006 512.006" xml:space="preserve">
+                              <g>
+                                 <g>
+                                    <path d="M388.419,475.59L168.834,256.005L388.418,36.421c8.341-8.341,8.341-21.824,0-30.165s-21.824-8.341-30.165,0
+                            L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251
+                            c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z" />
+                                 </g>
+                              </g>
+                           </svg>
+                        </span>
+                                <input class="field d-none" name="mother" type="text" value="" />
+                                <span class="show-value"></span>
+                                <span class="next-arrow" onclick="motherPick('next');">
+                           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002"
+                              style="enable-background: new 0 0 512.002 512.002" xml:space="preserve">
+                              <g>
+                                 <g>
+                                    <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+                            L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+                            l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z" />
+                                 </g>
+                              </g>
+                           </svg>
+                        </span>
+                            </div>
+                        </div>
+                        <img id="femaleParent" src="" />
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="model-preview">
+
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="male-parent-pick">
+                        <div class="next-prev-input-selection father-selection">
+                            <span class="show-marker">Father</span>
+                            <div class="actions">
+                                <span class="prev-arrow" onclick="fatherPick('prev');">
+                           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.006 512.006"
+                              style="enable-background: new 0 0 512.006 512.006" xml:space="preserve">
+                              <g>
+                                 <g>
+                                    <path d="M388.419,475.59L168.834,256.005L388.418,36.421c8.341-8.341,8.341-21.824,0-30.165s-21.824-8.341-30.165,0
+                            L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251
+                            c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z" />
+                                 </g>
+                              </g>
+                           </svg>
+                        </span>
+                                <input class="field d-none" name="father" type="text" value="" />
+                                <span class="show-value"></span>
+                                <span class="next-arrow" onclick="fatherPick('next');">
+                           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002"
+                              style="enable-background: new 0 0 512.002 512.002" xml:space="preserve">
+                              <g>
+                                 <g>
+                                    <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+                            L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+                            l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z" />
+                                 </g>
+                              </g>
+                           </svg>
+                        </span>
+                            </div>
+                        </div>
+                        <img id="maleParent" src="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Container Step 3 - Features -->
+    <form class="step-3">
+        <!-- Nose Width -->
+        <div id="step3left">
+            <center>
+                <div id="step3title" style="">Features</div>
+            </center>
+            <div id="step3-items">
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">nose width</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="noseWidth" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Nose Bottom Height</label>
+                    <label id="showNoseBottomHeight" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="noseBottomHeight" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Nose Tip Length</label>
+                    <label id="showNoseTipLength" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="noseTipLength" />
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Nose Bridge Depth</label>
+                    <label id="showNoseBridgeDepth" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="noseBridgeDepth" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Nose Tip Height</label>
+                    <label id="showNoseTipHeight" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="noseTipHeight" />
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Nose Broken</label>
+                    <label id="showNoseBroken" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="noseBroken" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Brow Height</label>
+                    <label id="showBrowHeight" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="browHeight" />
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Brow Depth</label>
+                    <label id="showBrowDepth" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="browDepth" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Cheekbone Height</label>
+                    <label id="showCheekboneHeight" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="cheekboneHeight" />
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Cheekbone Width</label>
+                    <label id="showCheekboneWidth" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="cheekboneWidth" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Cheek Depth</label>
+                    <label id="showCheekDepth" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="cheekDepth" />
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div id="step3right">
+            <center>
+                <div id="step3title">Features</div>
+            </center>
+            <div id="step3-items">
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Eye Size</label>
+                    <label id="showEyeSize" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="eyeSize" />
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Lip Thickness</label>
+                    <label id="showLipThickness" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="lipThickness" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Jaw Width</label>
+                    <label id="showJawWidth" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="jawWidth" />
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Jaw Shape</label>
+                    <label id="showJawShape" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="jawShape" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Chin Height</label>
+                    <label id="showChinHeight" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="chinHeight" />
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Chin Depth</label>
+                    <label id="showChinDepth" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="chinDepth" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Chin Width</label>
+                    <label id="showChinWidth" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="chinWidth" />
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Chin Indent</label>
+                    <label id="showChinIndent" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="chinIndent" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Neck Width</label>
+                    <label id="showNeckWidth" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="-1" max="1" step="0.01" value="0" class="slider" id="neckWidth" />
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Resamblance</label>
+                    <label id="showResamblance" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="resamblance" />
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Skin Tone</label>
+                    <label id="showSkinTone" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="skinTone" />
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <input class="field d-none" name="neckwidth" type="input" value="" />
+    </form>
+
+    <!-- Container Step 4 - Appearance -->
+    <form class="step-4">
+        <div id="step3left">
+            <center>
+                <div id="step3title" style="">Appereance</div>
+            </center>
+            <div id="step3-items">
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Blemishes</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="blemishes-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="blemishes">stats</span>
+                            <i id="blemishes-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Blemishes opacity</label>
+                    <label id="showBlemishesOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="blemishesOpacity" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Facial hair</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="facialhair-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="facial-hair">stats</span>
+                            <i id="facialhair-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Facial hair opacity</label>
+                    <label id="showFacialHairOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="facialHairOpacity" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Eyebrows</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="eyebrows-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="eyebrows">stats</span>
+                            <i id="eyebrows-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Eyebrows opacity</label>
+                    <label id="showEyebrowsOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="eyebrowsOpacity" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Ageing</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="ageing-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="ageing">stats</span>
+                            <i id="ageing-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Ageing opacity</label>
+                    <label id="showAgeingOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="ageingOpacity" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Makeup</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="makeup-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="makeup">stats</span>
+                            <i id="makeup-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Makeup opacity</label>
+                    <label id="showMakeUpOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="makeUpOpacity" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Blush</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="blush-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="blush">stats</span>
+                            <i id="blush-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Blush opacity</label>
+                    <label id="showBlushOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="blushOpacity" />
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div id="step3right">
+            <center>
+                <div id="step3title">Appereance</div>
+            </center>
+            <div id="step3-items">
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Complexion</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="complexion-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="complexion">stats</span>
+                            <i id="complexion-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Complexion opacity</label>
+                    <label id="showComplexionOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="complexionOpacity" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Sun damage</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="sunDamage-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="sunDamage">stats</span>
+                            <i id="sunDamage-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Sun damage opacity</label>
+                    <label id="showSunDamageOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="sunDamageOpacity" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Lipstick</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="lipstick-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="lipstick">stats</span>
+                            <i id="lipstick-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Lipstick opacity</label>
+                    <label id="showLipstickionOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="lipstickOpacity" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Moles & Freckles</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="moles-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="moles">stats</span>
+                            <i id="moles-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Moles & Freckles opacity</label>
+                    <label id="showMolesOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="molesOpacity" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Chest hair</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="chestHair-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="chestHair">stats</span>
+                            <i id="chestHair-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Chest hair opacity</label>
+                    <label id="showChestHairOpacity" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="100" step="1" value="50" class="slider" id="chestHairOpacity" />
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <input class="field d-none" name="neckwidth" type="input" value="" />
+    </form>
+
+    <!-- Container Step 5 - Hair & color -->
+    <form class="step-5">
+        <!-- Hair -->
+
+        <!-- HairColor -->
+
+        <!-- Hair Hightlighted Color -->
+
+        <!-- Eye Color -->
+
+        <!-- Blush Color -->
+
+        <!-- Lipstick Color -->
+
+        <!-- Chest Hair Color -->
+
+        <div id="step3left">
+            <center>
+                <div id="step3title">Hair & Colors</div>
+            </center>
+            <div id="step3-items">
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Hair style</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="hairStyle-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="hairStyle">stats</span>
+                            <i id="hairStyle-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Hair color</label>
+                    <label id="showHairColor" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="64" step="1" value="32" class="slider" id="hairColor" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Hair Highligted Color</label>
+                    <label id="showHairHighligted" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="64" step="1" value="32" class="slider" id="hairHighlited" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Eyebrown Color</label>
+                    <label id="showEyebrownColor" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="64" step="1" value="32" class="slider" id="eyebrownColor" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Facial Hair Color</label>
+                    <label id="showFacialHairColor" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="64" step="1" value="32" class="slider" id="facialHairColor" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Eye Color</label>
+                    <label id="showNoseWidth" for="customRange3" class="form-label step3-slider-value"></label><br />
+                    <center>
+                        <div id="list-container" style="position: relative">
+                            <i id="eyeColor-prev" class="fas fa-chevron-left" style="
+                    margin-left: 25px;
+                    margin-right: 10px;
+                    left: 0;
+                    position: absolute;
+                  "></i>
+                            <span id="eyeColor">stats</span>
+                            <i id="eyeColor-next" class="fas fa-chevron-right" style="
+                    margin-right: 25px;
+                    margin-left: 10px;
+                    right: 0;
+                    position: absolute;
+                  "></i>
+                        </div>
+                    </center>
+                </div>
+
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Blush Color</label>
+                    <label id="showBlushColor" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="27" step="1" value="13" class="slider" id="blushColor" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Lipstick Color</label>
+                    <label id="showLipstickColor" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="32" step="1" value="18" class="slider" id="lipstickColor" />
+                    </center>
+                </div>
+
+                <div id="step3-slider-item" style="background: rgba(0, 0, 0, 0.3)">
+                    <label for="customRange3" class="form-label" style="margin-left: 15%">Chest Hair Color</label>
+                    <label id="showChestHairColor" for="customRange3" class="form-label step3-slider-value">20</label><br />
+                    <center>
+                        <input type="range" min="1" max="64" step="1" value="32" class="slider" id="chestHairColor" />
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <input class="field d-none" name="chestcolor" type="input" value="" />
+    </form>
+
+    <div class="arrows">
+        <input type="submit" class="back" onclick="changeStep('prev');" value="Previous" />
+        <input type="submit" class="randomize" onclick="randomize($('body').attr('data-step'));" value="Randomize" />
+        <input type="submit" class="next" onclick="changeStep('next');" value="Next" />
+        <input type="submit" class="save" onclick="changeStep('save');" value="Save" />
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

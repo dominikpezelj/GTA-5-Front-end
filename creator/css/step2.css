@@ -1,0 +1,126 @@
+.step-2 .container-fluid {
+    position:absolute;  
+    top:50%;
+    transform: translate(-50%);
+    left:0;
+    width: 100%;
+}
+
+.step-2 .female-parent-pick,
+.step-2 .male-parent-pick {
+    display: inline-block;
+    border: 3px solid #33BBFF;
+    height: 100%;
+}
+
+.step-2 .female-parent-pick .mother-selection .show-marker,
+.step-2 .male-parent-pick .father-selection .show-marker  {
+    position: absolute;
+    bottom: 0;
+    background: #33BBFF;
+    width: 183px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3px 5px;
+    background: #33BBFF;
+    color: white;
+    display: block;
+}
+
+.step-2 .female-parent-pick .mother-selection .actions,
+.step-2 .male-parent-pick .father-selection .actions  {
+    padding: 3px 5px;
+    background: #33BBFF;
+    color: white;
+    position: relative;
+    display: block;
+}
+
+.step-2 .female-parent-pick .mother-selection .actions .prev-arrow,
+.step-2 .female-parent-pick .mother-selection .actions .next-arrow,
+.step-2 .male-parent-pick .father-selection .actions .prev-arrow,
+.step-2 .male-parent-pick .father-selection .actions .next-arrow  {
+    left: 0;
+    cursor: pointer;
+    position: absolute;
+    padding: 3px 5px;
+    top: 0;
+    z-index: 2;
+}
+
+.step-2 .female-parent-pick .mother-selection .actions .next-arrow,
+.step-2 .male-parent-pick .father-selection .actions .next-arrow {
+    right:0;
+    left: unset;
+}
+
+.step-2 .female-parent-pick img,
+.step-2 .male-parent-pick img {
+    height: 200px;
+    width: 176px;
+}
+
+.step-2 .female-parent-pick:after,
+.step-2 .male-parent-pick:after {
+    content: "";
+    width: 3px;
+    height: 102px;
+    background: #33BBFF;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.step-2 .female-parent-pick:before,
+.step-2 .male-parent-pick:before {
+    content: "";
+    height: 85px;
+    width: 3px;
+    background: #33BBFF;
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, 102px) skew(-30deg);
+    left: 41.6%;
+}
+
+.step-2 .male-parent-pick:before {
+    transform: translate(-50%, 102px) skew(30deg);
+    left: 58.4%;
+}
+
+.step-2 .model-preview:before {
+    content: "";
+    height: 25px;
+    width:3px;
+    background: #33BBFF;
+    top: calc(100% + 163px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.step-2 .model-preview:after {
+    content: "";
+    height: 3px;
+    top: calc(100% + 187px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #33BBFF;
+    width: 168%;
+}
+
+.step-2 .model-preview .resemblance-selection,
+.step-2 .model-preview .skin-selection {
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+    bottom: -70%;
+}
+
+.step-2 .model-preview .resemblance-selection {
+    left:0;
+    right:unset;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,316 @@
+/*=============COLORS==========*/
+:root {
+  --primaryBlue: #33BBFF;
+  --sucessColor: chartreuse;
+  --errorColor: #ff3021;
+  --whiteGray: #bababa;
+  --mainBackground: rgba(0, 0, 0, 0.5);
+  --mainYellow: #ffc800;
+  --mainWhite: #ffffff;
+}
+/*=============FONTS===========*/
+@font-face {
+  font-family: exo;
+  src: url(./fonts/exo/Exo2-ExtraLight.otf);
+}
+a{
+  text-decoration: none !important;
+}
+::placeholder {
+  color: var(--whiteGray) !important;
+}
+input{
+  color: var(--whiteGray) !important;
+  font-variant: small-caps;
+  min-width: 300px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 0px var(--primaryBlue) solid !important;
+  border-radius: 0px !important;
+  border-bottom: 4px var(--primaryBlue) solid !important;
+}
+.errorInput {
+  border-bottom: 4px var(--errorColor) solid !important;
+}
+body {
+  background: url(https://static.wikia.nocookie.net/gtawiki/images/c/ce/ChamberlainHills-GTAV.png/revision/latest?cb=20200203155535) no-repeat;
+ /* Keep the inherited background full size. */
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px var(--mainBackground);
+  filter: blur(3px);
+  margin: -20px;
+}
+.btn-contain {
+  margin: 5% auto;
+  min-height: 50px;
+}
+.btn-underline-contain {
+  max-width: 270px;
+  margin: 0 auto;
+}
+.btn-underline {
+  font-family:sans-serif;
+  font-weight:bold;
+  text-align: center;
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px;
+  padding: 20px;
+  transition: .3s;
+  display:block;
+  position:relative;
+  z-index: 5;
+}
+.btn-underline:after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--mainWhite);
+  left: 0;
+}
+.btn-underline:hover:after {
+  width: 100%;
+  left: 0;
+  background: var(--primaryBlue);
+}
+.btn-underline span {
+  font-weight: bold;
+}
+.btn-underline:hover span {
+  color: var(--primaryBlue);
+}
+.formError {
+  font-size: 25px;
+  font-family: exo;
+  font-weight: 600;
+  font-variant: small-caps;
+  width: 50%;
+  color: var(--mainWhite);
+  background-color: rgba(0, 0, 0, .7);
+  min-width: 300px;
+  border-bottom: 4px var(--errorColor) solid !important;
+}
+h2 {
+  font-size: 25px;
+  font-family: exo;
+  font-weight: 100;
+  background: var(--mainWhite);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: px;
+}
+.logo {
+  width: 20%;
+ min-width: 20%;
+ max-width: 20%;
+}
+.navmain {
+  background-color: transparent;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#btnLoginList, #btnInfoList {
+  background-color: var(--mainBackground);
+  width:17vw;
+  text-transform: uppercase;
+  font-family: calibri;
+  letter-spacing: 2px;
+}
+#btnRegisterList {
+  background-color: var(--mainBackground);
+  width:17vw;
+ text-transform: uppercase;
+  font-family: calibri;
+  letter-spacing: 2px;
+ margin-left: 5px;
+  margin-right: 5px;
+}
+#maincontainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  max-width: 100vw !important;
+  min-width: 100vw !important;
+}
+.maincontent {
+  position: relative;
+ background: var(--mainBackground);
+ min-height: 60vh;
+ height: 100%;
+ max-height: 60vh;
+  max-width: 52.3%;
+ min-width: 52.3%;
+}
+#login, #registration, #info {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-group {
+  margin-left: 200px;
+ margin-right: 200px;
+}
+.fireL {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.errText {
+  font-size: 30px !important;
+  font-variant: small-caps !important;
+ color: var(--mainWhite) !important;
+  margin-left: 20px !important;
+}
+.copyright {
+  display:block;
+  text-align:center;
+  font-family: calibri;
+  color: var(--mainWhite);
+  font-variant: small-caps;
+  margin-top:15px;
+}
+.powered-by {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: var(--mainYellow);
+  font-weight: 300;
+  text-decoration: none;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  text-align:center;
+  margin-bottom: 20px;
+}
+.fireButtons {
+  margin-top: -10px;
+}
+.infoText {
+  font-variant: small-caps;
+ font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 23px;
+}
+.leftimage {
+  height: 280px;
+ position: absolute;
+  margin-left:-26.3vw;
+ bottom:0;
+}
+.rightimage{
+  height: 260px;
+ position: absolute;
+  margin-left:6vw;
+ bottom:0;
+ right:0;
+}
+.footer {
+  margin-top: 20px;
+  background-color: var(--mainBackground);
+ min-height: fit-content;
+ height: 100%;
+ max-height: fit-content;
+ max-width: 52.3%;
+ min-width: 52.3%;
+}
+#discord {
+  height: 50px;
+}
+#rage {
+  height: 40px;
+}
+.loading1 {
+  color: var(--primaryBlue);
+  font-variant: small-caps;
+  font-family: calibri;
+  font-size: 22px;
+  margin-left: 10px;
+}
+.loadingSucess {
+  color: var(--sucessColor);
+  font-size: 50px;
+}
+.loadingFailed {
+  color: var(--errorColor);
+  font-size: 50px;
+}
+@media screen and (max-width: 1350px) {
+  #regmsg{
+      height: 200px !important;
+ }
+  #join-bg{
+      height: 160px !important;
+ }
+  #logman {
+      height: 200px !important;
+ }
+  #logwom{
+      height: 200px !important;
+ }
+}
+@media screen and (max-width: 1100px) {
+  #regmsg{
+      display: none !important;
+ }
+  #join-bg{
+      display: none !important;
+ }
+  #logman {
+      display: none !important;
+ }
+  #logwom{
+      display: none !important;
+ }
+  #discord {
+      height: 30px !important;
+ }
+  #rage {
+      height: 20px !important;
+ }
+  #footertext{
+      font-size: 10px !important;
+ }
+}
+@media screen and (max-height: 800px) {
+  #headliner{
+      display: none !important;
+ }
+  input {
+      margin-top: -20px;
+ }
+}
+/* -webkit-linear-gradient(-86deg, #5bf8eb 5%, #7ac2ec 53%, #0970e5 91%);
+*/

@@ -1,0 +1,10 @@
+.step-5 .next-prev-input-selection {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.step-5 .next-prev-input-selection .actions {
+    display: inline;
+    position: absolute;
+    right: 7px;
+}

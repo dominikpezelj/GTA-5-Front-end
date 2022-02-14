@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Title</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      -->
+      <!-- FONT AWESOME TREBA UBACIT -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="./index.css">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      </head>
+   <body style="background-color: rgba(0, 0, 0, 0.5);">
+      <div id="maincontainer" class="container" >
+         <center><img class="logo" src="./img/acrp.png"></center>
+         <center>
+            <nav class="navbar justify-content-center navbar-expand-sm navbar-dark navmain">
+               <div class="collapse navbar-collapse" id="collapsibleNavId">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                     <li id="btnLoginList" class="nav-item active">
+                        <a id="btnLogin" class="nav-link" href="#">Login </a>
+                     </li>
+                     <li id="btnRegisterList" class="nav-item">
+                        <a id="btnRegister" class="nav-link" href="#">Register</a>
+                     </li>
+                     <li id="btnInfoList" class="nav-item">
+                        <a id="btnInfo" class="nav-link" href="#">Info</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </center>
+         <center>
+            <div class="maincontent">
+               <form id="login" action="" method="post">
+                  <h2 id="headliner">Login</h2>
+                  <div id="errMsg"></div>
+                  <div class="form-group" >
+                     <label for=""></label>
+                     <input type="username" class="form-control" name="" id="loginUsername" aria-describedby="UsernameId" placeholder="Username">
+                  </div>
+                  <div class="form-group" >
+                     <label for=""></label>
+                     <input type="password" class="form-control" name="" id="loginPassword" placeholder="Password" >
+                  </div>
+                  <div id="fireLogin" class="btn-contain fireButtons">
+                     <div class="btn-underline-contain">
+                        <a href="#" class="btn-underline">
+                        <span>Login</span>
+                        </a>
+                     </div>
+                  </div>
+               </form>
+               <form id="registration" action="" method="post">
+                  <h2 id="headliner">Registration</h2>
+                  <div id="errMsgReg"></div>
+                  <div class="form-group">
+                     <label for=""></label>
+                     <input type="email" class="form-control" id="regEmail" placeholder="E-mail" >
+                  </div>
+                  <div class="form-group">
+                     <label for=""></label>
+                     <input type="username" class="form-control" id="regUsername" placeholder="Username" >
+                  </div>
+                  <div class="form-group">
+                     <label for=""></label>
+                     <input type="password" class="form-control" id="regPassword" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                     <label for=""></label>
+                     <input type="password" class="form-control" id="regPassword2" placeholder="Confirm password" >
+                  </div>
+                  <div id="fireRegister" class="btn-contain fireButtons">
+                     <div class="btn-underline-contain">
+                        <a href="#" class="btn-underline">
+                        <span>Register</span>
+                        </a>
+                     </div>
+                  </div>
+               </form>
+               <form id="info" action="" method="post">
+                  <h2 id="headliner">Info</h2>
+                  <div><b class="infoText"><b style="color: #33BBFF;">server status: </b><b style="color:chartreuse;">online</b></b></div>
+                  <div><b class="infoText"><b style="color: #33BBFF;">players online: </b><b style="color:white;">20/100</b></b></div>
+               </form>
+               <div id="loading"></div>
+               <img id="regmsg" class="leftimage" src="./img/regmsg.png"/>
+               <img id="join-bg" class="rightimage" src="./img/join-bg.png"/>
+               <img id="logman" class="leftimage" src="./img/loginman.png"/>
+               <img id="logwom" class="rightimage" src="./img/loginchar.png"/>
+            </div>
+         </center>
+         <footer>
+            <center>
+               <div class="footer">
+                  <div class="row">
+                  </div>
+                  <div class="row align-items-center">
+                     <div class="col-md-4"><img id="discord" src="./img/discordlogo.png"/></div>
+                     <div class="col-md-4">
+                        <div id="footertext" class="copyright">ARCADIUS ROLEPLAY © 2021</div>
+                        <div class="powered-by">powered by</div>
+                     </div>
+                     <div class="col-md-4"><img  id="rage" src="./img/ragelogo.png"/></div>
+                  </div>
+               </div>
+            </center>
+         </footer>
+      </div>
+      </div>
+      </div>
+      <!-- Nav tabs -->
+      <!-- Tab panes -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+   <script src="./main.js"></script> 
+</html>

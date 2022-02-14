@@ -1,0 +1,158 @@
+
+:root {
+    --primaryBlue: #33bbff;
+    --sucessColor: chartreuse;
+    --errorColor: #ff3021;
+    --whiteGray: #bababa;
+    --mainBackground: rgba(0, 0, 0, 0.5);
+    --mainYellow: #ffc800;
+    --mainWhite: #ffffff;
+  }
+@font-face {
+    font-family: signpainter;
+    src: url(../fonts/signpainter.ttf);
+  }
+  @font-face {
+    font-family: exo;
+    src: url(../fonts/exo/Exo2-ExtraLight.otf);
+  }
+
+  /* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+background: var(--mainBackground);
+    
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primaryBlue); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primaryBlue); 
+  }
+
+.step-3 .col-md-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-left: 3%;
+}
+
+.step-3 .next-prev-input-selection {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.step-3 .next-prev-input-selection .actions {
+    display: inline;
+    position: absolute;
+    right: 7px;
+}
+
+#step3left {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    height: 60vh;
+    left: 0;
+    width: 25vw;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#step3right {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    height: 60vh;
+    right: 0;
+    width: 25vw;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#step3title { 
+  height: fit-content;
+    padding: 10px;
+  color: var(--mainWhite);
+  font-family: signpainter;
+  font-weight: bolder;
+  font-size: 30px;
+  letter-spacing: 5px;
+  /*border-bottom: 2px solid var(--mainWhite);*/
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#05abe0+0,33bbff+0,53cbf1+47,87e0fd+99 */
+background: #05abe0; /* Old browsers */
+background: -moz-linear-gradient(top,  #05abe0 0%, #33bbff 0%, #53cbf1 47%, #87e0fd 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #05abe0 0%,#33bbff 0%,#53cbf1 47%,#87e0fd 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #05abe0 0%,#33bbff 0%,#53cbf1 47%,#87e0fd 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#87e0fd',GradientType=0 ); /* IE6-9 */
+
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--primaryBlue);
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--primaryBlue);
+    cursor: pointer;
+  }
+  #step3-slider-item{
+      color: var(--mainWhite);
+      font-family: exo;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      padding-top: 5px;
+      border-bottom: 2px solid var(--mainWhite);
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #step3-items {
+    max-height: 50vh;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+        height: 50vh;
+  }
+  .step3-slider-value{
+    padding-left: 5px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    padding-right: 5px;
+  }
+  

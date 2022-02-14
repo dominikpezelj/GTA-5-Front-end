@@ -1,0 +1,189 @@
+:root {
+  --primaryBlue: #33bbff;
+  --sucessColor: chartreuse;
+  --errorColor: #ff3021;
+  --whiteGray: #bababa;
+  --mainBackground: rgba(0, 0, 0, 0.5);
+  --mainYellow: #ffc800;
+  --mainWhite: #ffffff;
+}
+
+@font-face {
+  font-family: signpainter;
+  src: url(../fonts/signpainter.ttf);
+}
+@font-face {
+  font-family: exo;
+  src: url(../fonts/exo/Exo2-ExtraLight.otf);
+}
+body {
+    background: transparent;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  max-width: none !important;
+}
+#title {
+  top: 0;
+  margin: auto;
+  width: 30vw;
+  background-color: var(--mainBackground);
+  padding: 10px;
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  font-family: exo;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+#arrow-left {
+  font-size: 45px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: var(--primaryBlue);
+}
+#arrow-right {
+  font-size: 45px;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: var(--primaryBlue);
+}
+#play {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  background-color: var(--primaryBlue);
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: exo;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+#new-char {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  background-color: var(--primaryBlue);
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: exo;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  border: none !important;
+}
+#character-name {
+  bottom: 0;
+  margin: auto;
+  width: 30vw;
+  background-color: var(--mainBackground);
+  padding: 10px;
+  color: var(--mainWhite);
+  font-family: signpainter;
+  font-weight: bolder;
+  font-size: 30px;
+  letter-spacing: 5px;
+  border-top: 2px solid var(--mainWhite);
+}
+#character-stats {
+  bottom: 0;
+  margin: auto;
+  width: 30vw;
+  background-color: var(--mainBackground);
+  padding: 10px;
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  font-family: exo;
+  font-weight: bolder;
+  font-size: 10px;
+  letter-spacing: 5px;
+  border-top: 2px solid var(--mainWhite);
+}
+
+.add-character {
+  font-size: 120px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: var(--primaryBlue);
+  color: var(--mainWhite);
+  border: 1px solid var(--primaryBlue);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 70px var(--primaryBlue);
+}
+#showModal {
+  position: relative;
+  height: 70vh;
+  bottom: 10px;
+  margin-top: 30px;
+  top: 10px;
+  margin: auto;
+  width: 30vw;
+  background-color: var(--mainBackground);
+  color: var(--mainWhite);
+  padding: 15px;
+}
+
+#charStats {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: var(--primaryBlue);
+}
+
+#close {
+  color: var(--primaryBlue);
+  bottom: 0;
+  width: 10vw;
+  background-color: var(--mainBackground);
+  padding: 10px;
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  font-family: exo;
+  font-weight: bolder;
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+
+.popover {
+  background: var(--errorColor) !important;
+
+  text-transform: uppercase !important;
+  font-family: exo !important;
+  font-weight: bolder !important;
+  letter-spacing: 5px !important;
+}
+
+.bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::after,
+.bs-popover-top > .popover-arrow::after {
+  border-top-color: var(--errorColor) !important;
+}
+.popover-body {
+  color: var(--mainWhite) !important;
+}

@@ -1,0 +1,15 @@
+.step-4 .col-md-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.step-4 .next-prev-input-selection {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.step-4 .next-prev-input-selection .actions {
+    display: inline;
+    position: absolute;
+    right: 7px;
+}

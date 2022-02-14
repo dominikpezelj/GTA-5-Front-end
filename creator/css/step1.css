@@ -1,0 +1,169 @@
+@font-face {
+    font-family: old;
+    src: url(../fonts/1942.ttf);
+  }
+
+  @font-face {
+    font-family: fontold;
+    src: url(../fonts/fontold.ttf);
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    color: #000;
+    font-family: fontold;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: #000;
+    font-family: fontold;
+  }
+  
+  ::placeholder {
+    color: #000;
+    font-family: fontold;
+  }
+form.step-1 .male-pick,
+form.step-1 .female-pick {
+    position: relative;
+    padding: 0;
+}
+
+form.step-1 .female-pick .gender-image,
+form.step-1 .male-pick .gender-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    filter: grayscale(1);
+    transition: .3s all ease-in-out;
+}
+
+form.step-1 .female-pick .gender-image:hover,
+form.step-1 .male-pick .gender-image:hover {
+    filter: grayscale(0);
+}
+
+form.step-1 .female-pick .gender-image {
+	background: url(../images/female_pick.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+form.step-1 .male-pick .gender-image {
+	background: url(../images/male_pick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35% 50%;
+}
+
+form.step-1 .female-pick .gender-image:after,
+form.step-1 .male-pick .gender-image:after {
+    content: "FEMALE";
+    display: inline-block;
+    background: gray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    transform: translateY(100%);
+    padding: 10px;
+    font-family: 'Opens Sans', sans-serif;
+    font-weight: bold;
+    color: lightgray;
+    transition: .3s all ease-in-out;
+}
+
+form.step-1 .male-pick .gender-image:after {
+    content: "MALE";
+}
+
+form.step-1 .female-pick label,
+form.step-1 .male-pick label {
+    padding: 200px 80px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+form.step-1 .female-pick input[type="radio"]:checked ~ .gender-image,
+form.step-1 .male-pick input[type="radio"]:checked ~ .gender-image {
+    filter:grayscale(0);
+}
+
+form.step-1 .female-pick:hover .gender-image:after,
+form.step-1 .male-pick:hover .gender-image:after {
+    background: #17c2d7;
+    color: white;
+}
+
+form.step-1 .female-pick input[type="radio"]:checked ~ .gender-image:after,
+form.step-1 .male-pick input[type="radio"]:checked ~ .gender-image:after {
+    background: #17c2d7;
+    color: white;
+}
+
+form.step-1 .selection .col-md-3,
+form.step-1 .submit .col-md-6 {
+    padding:0;
+    background: rgba(4, 4, 4, 0.56);
+}
+
+#immigration{
+    position: relative;
+    background: url("../images/bg-immigration.jpg");
+    height: 73vh;
+    max-height: 73vh;
+        width: 40%;
+        margin: 0;
+        position: absolute;
+        top: 58%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#content-logo1 {
+    position: absolute;
+    padding: 20px;
+}
+
+#content-logo2 {
+    position: absolute;
+    padding: 20px;
+    right:0;
+}
+
+#content-header-text {
+    margin-top: 32px !important;
+    position: relative;
+    margin: auto;
+    width: 50%;
+    font-family: fontold;
+    font-size: 15px;
+}
+
+#content-title {
+    font-family: fontold;
+    font-size: 23px;
+}
+hr {
+    height: 2px;
+    background: #000;
+    width: 80%;
+    margin-top: 43px;
+}
+
+#signature {
+padding-top: 30px;
+font-family: fontold;
+    font-size: 15px;
+}
+
+#state{
+    padding-top: 30px;
+    font-family: fontold;
+    font-size: 15px;
+}
